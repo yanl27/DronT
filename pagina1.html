@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>INTELIGENT UPTAKE</title>
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+		<script>
+			function validarform()
+			{
+				var x=document.forms["form1"]["login"].value;
+				var y=document.forms["form1"]["passw"].value;
+
+				if(x=="juan" && y=="david")
+				{
+					return true;
+				}
+				if(x=="yan" && y=="luis")
+				{
+					return true;
+				}
+				if(x=="victor" && y=="eduardo")
+				{
+					return true;
+				}
+				if(x=="jensen" && y=="fabian")
+				{
+					return true;
+				}
+				else
+				{
+					alert("El usuario no esta registrado");
+					return false;
+				}
+			}
+		</script>
+	<body>
+		<h1>INTELIGENT UPTAKE</h1>
+		<img src="IOT.png">
+		<h2></h2>
+		<form name="form1" onsubmit="return validarform()" action="validacion.php" method="POST">
+			LOGIN    : <input type="text" name="login"><br>
+			PASSWORD : <input type="password" name="passw"><br>
+			<input type="submit" value="ENVIAR">
+			<input type="reset" value="BORRAR">
+		</form>
+	</body>
+</html>

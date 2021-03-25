@@ -1,0 +1,14 @@
+body{background: Gold; text-align: center;}
+h1 {color: black;}
+h1 {font-family:Impact;}
+h3 {color: Crimson;}
+h3 {font-family:Impact;}
+img {width:700px;height:400px;}
+table, th, td
+{
+	border: 1px solid black
+}
+table th {background-color: #8B0000;}
+table th {color: white;}
+table td {background-color: #FF7F50;}
+
